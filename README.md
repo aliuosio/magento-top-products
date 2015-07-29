@@ -1,7 +1,6 @@
-README.md
+magento-top-products
 ==========
 
-# magento-top-products
 This Magneto Extension is equippped with an admin panel which resides at:
 Dev-HH -> Top Products
 
