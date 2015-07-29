@@ -1,0 +1,4 @@
+app/code/local/Devhh/Topproducts                                app/code/local/Devhh/Topproducts
+app/etc/modules/Devhh_Topproducts.xml                           app/etc/modules/Devhh_Topproducts.xml
+app/design/adminhtml/default/default/layout/topproducts.xml     app/design/adminhtml/default/default/layout/topproducts.xml
+app/design/adminhtml/default/default/template/generate.phtml    app/design/adminhtml/default/default/template/generate.phtml

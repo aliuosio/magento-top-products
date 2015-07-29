@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Devhh_Topproducts>
+            <active>true</active>
+            <codePool>local</codePool>
+            <name>Devhh Top Products</name>
+            <depends>
+                <Sm_Tablisting/>
+            </depends>
+        </Devhh_Topproducts>
+    </modules>
+</config>

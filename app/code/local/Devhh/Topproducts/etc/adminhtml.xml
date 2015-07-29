@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <devhh translate="title" module="topproducts">
+            <title>Dev-HH</title>
+            <sort_order>70</sort_order>
+            <children>
+                <topproducts translate="title" module="topproducts">
+                    <title>Top Products auf Startseite</title>
+                    <action>topproducts/adminhtml_generate</action>
+                </topproducts>
+            </children>
+        </devhh>
+    </menu>
+
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <topproducts translate="title">
+                                        <title>Top Products</title>
+                                        <sort_order>500</sort_order>
+                                    </topproducts>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

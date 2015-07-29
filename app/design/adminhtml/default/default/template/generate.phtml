@@ -1,0 +1,16 @@
+<div class="content-header">
+    <table cellspacing="0" class="grid-header">
+        <tr>
+            <td><h3><?php echo $this->__('Top Products Generator'); ?></h3></td>
+        </tr>
+    </table>
+</div>
+<form action="<?php echo Mage::getModel('adminhtml/url')->getUrl('topproducts/adminhtml_generate/index') ?>" method="post">
+    <input type="hidden" name="form_key" value="<?php echo $this->getFormKey(); ?>" />
+    <button type="submit" name="action" value="newestProducts" onclick="this.value='newestProducts'">Neuheiten</button>
+    <button type="submit" name="action" value="topRatedProducts" onclick="this.value='topRatedProducts'">Am Besten Bewertet</button>
+    <button type="submit" name="action" value="bestsellers" onclick="this.value='bestsellers'">Best of Backstage</button>
+</form>
+<div style="margin-top: 20px; width: 333px; text-align: center">
+    <h5><?php echo Mage::registry('action');?></h5>
+</div>

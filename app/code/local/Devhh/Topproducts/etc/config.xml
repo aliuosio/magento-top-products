@@ -1,0 +1,57 @@
+<config>
+    <modules>
+        <Devhh_Topproducts>
+            <version>0.1.0</version>
+        </Devhh_Topproducts>
+    </modules>
+    <global>
+        <models>
+            <topproducts>
+                <class>Devhh_Topproducts_Model</class>
+            </topproducts>
+        </models>
+        <blocks>
+            <topproducts>
+                <class>Devhh_Topproducts_Block</class>
+            </topproducts>
+        </blocks>
+        <helpers>
+            <topproducts>
+                <class>Devhh_Topproducts_helper</class>
+            </topproducts>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <topproducts>
+                <use>admin</use>
+                <args>
+                    <module>Devhh_Topproducts</module>
+                    <frontName>topproducts</frontName>
+                </args>
+            </topproducts>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <topproducts>
+                    <file>topproducts.xml</file>
+                </topproducts>
+            </updates>
+        </layout>
+    </adminhtml>
+    <!--
+    <crontab>
+        <jobs>
+            <assign_topproducts_to_special_categories>
+                <schedule><cron_expr>0 5 * * *</cron_expr></schedule>
+                <run>
+                    <model>topproducts/general::run</model>
+                </run>
+            </assign_topproducts_to_special_categories>
+        </jobs>
+    </crontab>
+    -->
+
+</config>
